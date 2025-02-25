@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
-#from sklearn.preprocessing import StandardScaler
-
+from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import LabelEncoder
 # Load trained model, scaler, and encoders
 with open("best_model.pkl", "rb") as model_file:
     model = pickle.load(model_file)
